@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Abhinaba Sarkar - Personal Projects</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="navigation">
+        <li><a href="home.html">Back to Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Personal Projects</h2>
+      <div class="project-card">
+        <h3>To-Do Web Application</h3>
+        <p>HTML Structure:</p>
+        <ul>
+          <li>The HTML file starts with the `<!DOCTYPE html>` declaration and the opening `<html>` tag.</li>
+          <li>The `<head>` section contains meta tags and the title of the page.</li>
+          <li>It includes a link to the `main.css` file for styling.</li>
+          <li>The `<body>` section consists of the application's header and main content.</li>
+          <li>The header contains a title and a form to add new tasks.</li>
+          <li>The main section contains a task-list div where the tasks will be displayed.</li>
+        </ul>
+        <p>CSS Styling:</p>
+        <ul>
+          <li>Sets up the color scheme, font, and layout properties for different elements.</li>
+          <li>Defines styles for the header, form, task list, and individual tasks.</li>
+          <li>Uses CSS variables to define custom color values.</li>
+        </ul>
+        <p>JavaScript Functionality:</p>
+        <ul>
+          <li>Adds an event listener to the window's load event to ensure the DOM is ready.</li>
+          <li>Selects the necessary elements from the DOM using `querySelector`.</li>
+          <li>Adds an event listener to the form's submit event to handle task creation.</li>
+          <li>When the form is submitted, it prevents the default form submission behavior.</li>
+          <li>Retrieves the value of the new task input and creates a new task element.</li>
+          <li>Configures the task element by adding appropriate classes and child elements.</li>
+          <li>Appends the task element to the task list.</li>
+          <li>Clears the input field by setting its value to an empty string.</li>
+          <li>Adds event listeners to the edit and delete buttons of each task element.</li>
+          <li>The edit button allows users to toggle between editing and saving the task text.</li>
+          <li>The delete button removes the task element from the task list.</li>
+        </ul>
+        <p>To-Do Web Application Demo:</p>
+        <button class="demo-button"><a href="https://as-repo1.github.io/do_something/" target="_blank">Demo</a></button>
+      </div>
+      
+      <div class="project-card">
+        <h3>Stopwatch Application</h3>
+        <p>HTML Structure:</p>
+        <ul>
+          <li>The HTML file starts with the `<!DOCTYPE html>` declaration and the opening `<html>` tag.</li>
+          <li>The `<head>` section contains meta tags and the title of the page.</li>
+          <li>It includes a link to the `main.css` file for styling.</li>
+          <li>The `<body>` section consists of a div with the class "watch" that represents the stopwatch.</li>
+          <li>Inside the "watch" div, there is a div with the class "time" to display the stopwatch time.</li>
+          <li>Below the time div, there is another div with the class "controls" that contains three buttons: start, stop, and reset.</li>
+        </ul>
+        <p>CSS Styling:</p>
+        <ul>
+          <li>Defines CSS variables to set the color scheme for the stopwatch.</li>
+          <li>Sets up the font, background color, and color properties for different elements.</li>
+          <li>Styles the "watch" container with padding, margin, and border-radius.</li>
+          <li>Styles the "time" div with a large font size and margin-bottom.</li>
+          <li>Styles the "controls" div as a flex container with centered content.</li>
+          <li>Styles the buttons with border-radius, padding, and transition properties.</li>
+        </ul>
+        <p>JavaScript Functionality:</p>
+        <ul>
+          <li>Retrieves necessary elements from the DOM using `querySelector` and `getElementById`.</li>
+          <li>Defines two global variables: `time_el` for the time element and `interval` for the timer interval.</li>
+          <li>Sets the initial values for seconds and interval.</li>
+          <li>Adds event listeners to the start, stop, and reset buttons.</li>
+          <li>The start button click event calls the start function.</li>
+          <li>The stop button click event calls the stop function.</li>
+          <li>The reset button click event calls the reset function.</li>
+          <li>The timer function is responsible for updating the stopwatch time.</li>
+          <li>The start function starts the timer interval by calling the timer function every second.</li>
+          <li>The stop function clears the interval to stop the timer.</li>
+          <li>The reset function stops the timer and resets the seconds value and the displayed time.</li>
+        </ul>
+        <p>Stopwatch Application Demo:</p>
+        <button class="demo-button"><a href="https://as-repo1.github.io/stop_watching/" target="_blank">Demo</a></button>
+      </div>
+
+      <div class="project-card">
+        <h3>Churn Analysis</h3>
+        <p>Project Description:</p>
+        <ul>
+          <li>Importing Libraries:</li>
+          <ul>
+            <li>The code begins by importing the necessary libraries such as pandas, matplotlib, and numpy.</li>
+          </ul>
+          <li>Reading and Preparing the Data:</li>
+          <ul>
+            <li>The code reads a CSV file named "WA_Fn-UseC_-Telco-Customer-Churn.csv" using pandas' <code>read_csv()</code> function and stores it in a DataFrame called <code>df</code>.</li>
+            <li>The code performs various operations on the DataFrame:</li>
+            <ul>
+              <li>Dropping the 'customerID' column using <code>df.drop()</code>.</li>
+              <li>Checking the data types of the columns using <code>df.dtypes</code>.</li>
+              <li>Converting the 'TotalCharges' column to numeric values using <code>pd.to_numeric()</code>.</li>
+              <li>Identifying any null values in the 'TotalCharges' column.</li>
+              <li>Filtering the DataFrame to exclude rows where 'TotalCharges' is null.</li>
+              <li>Converting the 'TotalCharges' column to numeric values again after removing null values.</li>
+            </ul>
+          </ul>
+          <li>Data Visualization:</li>
+          <ul>
+            <li>The code uses matplotlib to create visualizations based on the churn prediction data.</li>
+            <li>It creates two histograms:</li>
+            <ul>
+              <li>The first histogram visualizes the distribution of the 'tenure' feature for customers with churn ('Churn=Yes') and without churn ('Churn=No').</li>
+              <li>The second histogram visualizes the distribution of the 'MonthlyCharges' feature for customers with churn and without churn.</li>
+            </ul>
+          </ul>
+          <li>Data Preprocessing:</li>
+          <ul>
+            <li>The code defines a function called <code>print_unique_col_values(df)</code> to print unique values for object-type columns in the DataFrame.</li>
+            <li>It replaces specific values in certain columns, such as 'No internet service' with 'No', using <code>df1.replace()</code>.</li>
+            <li>It converts binary categorical columns ('Yes'/'No') to numeric values (1/0) using <code>df1[col].replace()</code> in a loop.</li>
+            <li>It converts the 'gender' column values ('Female'/'Male') to numeric values using <code>df1['gender'].replace()</code>.</li>
+          </ul>
+          <li>One-Hot Encoding:</li>
+          <ul>
+            <li>The code uses pandas' <code>get_dummies()</code> function to perform one-hot encoding on categorical columns: 'InternetService', 'Contract', and 'PaymentMethod'.</li>
+            <li>This process creates new columns representing the categories.</li>
+          </ul>
+          <li>Feature Selection:</li>
+          <ul>
+            <li>The code applies feature selection techniques to identify the top 20 features related to the target variable ('Churn').</li>
+            <li>It uses <code>SelectKBest</code> with chi-squared scoring to select the best features.</li>
+          </ul>
+          <li>Model Training and Evaluation:</li>
+          <ul>
+            <li>The code splits the data into training and testing sets using <code>train_test_split()</code>.</li>
+            <li>It builds and trains a neural network model using Keras.</li>
+            <li>The model consists of multiple dense layers with ReLU activation and a sigmoid output layer.</li>
+            <li>It is compiled with the Adam optimizer and binary cross-entropy loss.</li>
+            <li>The model's training history is stored in the <code>history</code> variable.</li>
+          </ul>
+          <li>Model Performance Evaluation:</li>
+          <ul>
+            <li>The code evaluates the trained model on the test set using <code>model.evaluate()</code>.</li>
+            <li>It also predicts the churn values for the test set using <code>model.predict()</code>.</li>
+            <li>Then, it converts the predicted probabilities into binary predictions based on a threshold of 0.5.</li>
+            <li>Several evaluation metrics such as accuracy, precision, recall, F1-score, and a confusion matrix are calculated and printed using sklearn's classification metrics.</li>
+          </ul>
+          <li>Additional Calculations:</li>
+          <ul>
+            <li>The code performs some additional calculations related to the confusion matrix and churn rate, but without further context, it's not clear what these calculations are intended for.</li>
+          </ul>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <h3>Movie Recommendation System</h3>
+        <p>Project description:</p>
+        <ul>
+          <li>This project processes movie data from two different CSV files and merges them into one using the title of the movies.</li>
+          <li>It selects specific features and processes them to prepare for text vectorization.</li>
+          <li>The goal is to create a content-based recommendation system for movies.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

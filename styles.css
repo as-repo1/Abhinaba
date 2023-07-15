@@ -1,0 +1,192 @@
+/* Reset some default styles */
+html, body, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #555;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  section h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  section p {
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+  }
+  
+  a {
+    color: #555;
+    text-decoration: none;
+  }
+  
+  /* Add card-like styles */
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add transparency and shades of grey */
+  .header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+  }
+  
+  .container {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  section {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+  }
+  
+  section:nth-child(even) {
+    background-color: rgba(240, 240, 240, 0.9);
+  }
+  .skills-buttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .skills-buttons button {
+    background-color: #ccc;
+    border: none;
+    border-radius: 4px;
+    color: #333;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 6px 12px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .skills-buttons button:hover {
+    background-color: #999;
+  }
+/*resule page , menu_index*/
+header {
+    background-color: #333;
+    padding: 20px;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navigation li {
+    margin-right: 20px;
+  }
+  
+  .navigation li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .navigation li a:hover {
+    color: #ccc;
+  }
+  
+  .download-button a {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-button a:hover {
+    background-color: #999;
+  }
+/*intrests-section  of resume.html*/
+.interests-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .interests-list li {
+    margin-bottom: 10px;
+  }
+  
+  .interests-list li a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .interests-list li a i {
+    margin-right: 5px;
+  }
+/*skill section of resume.html*/
+.skills-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skills-buttons button {
+    margin: 5px;
+    padding: 8px 16px;
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .skills-buttons button a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .skills-buttons button i {
+    margin-right: 5px;
+  }
+  
